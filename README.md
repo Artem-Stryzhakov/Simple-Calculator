@@ -12,7 +12,7 @@ https://docs.google.com/document/d/1zpXXeSae-BlcxPKgw3DhxZA92cspVailrPYoaXSYrW8/
 ---
 1. Download zip file and extract it to a place convenient for you or just clone the project via [Github CLI](https://cli.github.com/) using ```gh repo clone Artem-Stryzhakov/Simple-Calculator``` in your Cmd (Windows) or Terminal (MacOS).
 2. Open the project folder in your development environment (VS Code / IDE) and write ```npm install``` in console. It will download all necessary files.
-3. Write ```npm run serve``` in your console to launch local server. After server is launched, open http://localhost:8080 in your browser.
+3. Write ```npm run serve``` in your console to launch local server. After server is launched, open http://localhost:8080 in your browser, or you can just open ```./dist/index.html``` directly.
 
 ## Folder structure📁
 
