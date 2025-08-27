@@ -17,7 +17,7 @@ https://docs.google.com/document/d/1zpXXeSae-BlcxPKgw3DhxZA92cspVailrPYoaXSYrW8/
 ## Folder structure📁
 
 ---
-I have several folders for work:
+I have several main folders for work:
 ```
 Simple-Calculator/
 |── dist/                                 # Built project (generated after build), ready for deployment
