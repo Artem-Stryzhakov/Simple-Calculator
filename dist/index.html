@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple Calculator App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="calculator dark">
+      <div class="theme-section">
+        <button class="change-theme" data-theme="light">
+          <i class="fa-regular fa-sun"></i>
+        </button>
+        <button class="change-theme active" data-theme="dark">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+      </div>
+      <section>
+        <div class="screen-result">
+          <label id="equation" for="input"></label>
+          <input id="input" type="text" />
+        </div>
+        <table>
+          <tr>
+            <td>
+              <button id="reset" class="green">AC</button>
+            </td>
+            <td>
+              <button id="changeSign" class="green">+/-</button>
+            </td>
+            <td>
+              <button id="%" class="operation green">%</button>
+            </td>
+            <td>
+              <button id="/" class="operation red">÷</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="7" class="number">7</button>
+            </td>
+            <td>
+              <button id="8" class="number">8</button>
+            </td>
+            <td>
+              <button id="9" class="number">9</button>
+            </td>
+            <td>
+              <button id="*" class="operation red">×</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="4" class="number">4</button>
+            </td>
+            <td>
+              <button id="5" class="number">5</button>
+            </td>
+            <td>
+              <button id="6" class="number">6</button>
+            </td>
+            <td>
+              <button id="-" class="operation red">-</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="1" class="number">1</button>
+            </td>
+            <td>
+              <button id="2" class="number">2</button>
+            </td>
+            <td>
+              <button id="3" class="number">3</button>
+            </td>
+            <td>
+              <button id="+" class="operation red">+</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="0" class="number">0</button>
+            </td>
+            <td>
+              <button id="." class="coma">,</button>
+            </td>
+            <td>
+              <button id="backspace">
+                <i class="fa-solid fa-delete-left"></i>
+              </button>
+            </td>
+            <td>
+              <button id="equal" class="red">=</button>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </div>
+  </body>
+</html>

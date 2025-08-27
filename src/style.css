@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
+@import "themes/dark-theme.css";
+@import "themes/light-theme.css";
+
+:root {
+    --darkGrey: rgb(42, 45, 55);
+    --white-second: #e8e8e8;
+    --turquoise: rgb(39, 223, 204);
+    --red: rgb(247, 126, 133);
+}
+
+* {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+    background: #3b3b3b;
+    background: linear-gradient(90deg, rgba(59, 59, 59, 1) 0%, rgba(41, 2, 118, 1) 0%, rgba(58, 0, 173, 1) 50%, rgba(106, 0, 167, 1) 100%);
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+button {
+    cursor: pointer;
+}
+
+.calculator {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    gap: 10px;
+    height: 700px;
+    width: 350px;
+    padding-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 12px 28px 0px, rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition: 0.3s ease-in-out;
+
+    top: 70%;
+    left: calc(50% - 175px);
+    transform: translate(0, -85%);
+
+    .theme-section {
+        display: flex;
+        border-radius: 20px;
+        overflow: hidden;
+
+        button {
+            width: 55px;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            transition: 0.3s ease-in-out;
+
+
+            &.active {
+                i {
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .screen-result {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin: 0 20px 20px;
+        transition: 0.3s ease-in-out;
+
+        #equation {
+            height: 30px;
+        }
+
+        input {
+            height: fit-content;
+            width: 100%;
+            text-align: right;
+            border: none;
+            font-size: 42px;
+            font-weight: bold;
+            background: none;
+            outline: none;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 0;
+
+            &.error {
+                color: #ff6969;
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+        padding: 10px 10px 15px;
+        border-spacing: 8px;
+        border-radius: 20px 20px 0;
+        transition: 0.3s ease-in-out;
+
+        tr button {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            border: none;
+            font-size: 28px;
+            transition: 0.3s ease-in-out;
+
+
+            &.red
+            {
+                font-size: 38px;
+            }
+        }
+    }
+}

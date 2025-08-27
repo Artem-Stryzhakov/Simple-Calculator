@@ -1,0 +1,55 @@
+.calculator.light {
+    background-color: rgb(243, 243, 243);
+
+    .theme-section {
+        background-color: var(--white-second);
+
+        button {
+            background-color: var(--white-second);
+            color: #c8c8c8;
+
+            &:hover {
+                background-color: #dfdfdf;
+            }
+
+            &.active {
+                i {
+                    color: #5a5a5a;
+                }
+            }
+        }
+    }
+
+    .screen-result {
+        #equation {
+            color: #5a5a5a;
+        }
+
+        input {
+            color: rgb(14, 16, 18);
+        }
+    }
+
+    table {
+        background-color: var(--white-second);
+
+        tr button {
+            color: rgb(14, 16, 18);
+            background-color: var(--white-second);
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+
+            &:hover {
+                background-color: #f4f4f4;
+            }
+
+            &.green, i {
+                color: rgb(35, 198, 182);
+            }
+
+            &.red
+            {
+                color: var(--red);
+            }
+        }
+    }
+}

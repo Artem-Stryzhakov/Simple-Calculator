@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "name": "webpack-project",
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "dev": "webpack --mode=development",
+    "serve": "webpack serve",
+    "watch": "webpack --watch",
+    "check": "eslint ./src/index.js",
+    "check-fix": "eslint ./src/index.js --fix",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "@eslint/js": "^9.34.0",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.3.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.4",
+    "mini-css-extract-plugin": "^2.9.4",
+    "prettier": "3.6.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2",
+    "husky": "^8.0.0"
+  },
+  "lint-staged": {
+    "*.{js, jsx,ts,tsx}": [
+      "eslint --quiet --fix"
+    ],
+    "*.{json,js,ts,jsx,tsx,html}": [
+      "prettier --write --ignore-unknown"
+    ]
+  }
+}
